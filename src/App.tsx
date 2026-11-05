@@ -30,6 +30,8 @@ function App() {
   };
 
   useEffect(() => {
+    // The initial fetch intentionally updates local loading/data state.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadAds();
   }, []);
 
@@ -73,7 +75,7 @@ function App() {
       } else {
         alert('Сбой при публикации.');
       }
-    } catch (err) {
+    } catch {
       alert('Нет связи с сервером.');
     } finally {
       setIsSending(false);

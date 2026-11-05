@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## Запуск локально
+
+```bash
+npm ci
+npm run dev
+```
+
+Откройте `http://127.0.0.1:5173/7task/`.
+
+Для production-сборки используйте `npm run build`. Готовые статические файлы для GitHub Pages находятся в `docs/`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
